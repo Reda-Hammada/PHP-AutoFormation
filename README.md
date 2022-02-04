@@ -8,4 +8,4 @@ in This repository i share what i have learnt in PHP, and what references i have
 
 
 ### References :  
-[PHP reference tutorial](https://www.phptutorial.net/);
+[PHP tutorial](https://www.phptutorial.net/);

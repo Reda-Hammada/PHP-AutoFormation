@@ -1,5 +1,5 @@
 <?php 
-// firt way to define a const 
+// first way to define a const 
 define('name', 'reda');
 
 echo name . "</br>";

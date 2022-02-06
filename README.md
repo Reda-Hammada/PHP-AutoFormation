@@ -7,7 +7,7 @@ in This repository i share what i have learnt in PHP, and what references i have
 -Array(nested array    
 -Conditions( if & else)    
 -GET and POST    
-- Class and Object  
+-Class and Object   
 
 
 

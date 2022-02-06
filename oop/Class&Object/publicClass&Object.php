@@ -13,7 +13,7 @@ class bankAccount{
 
     public function deposit($amount){
         
-        if($amoubt > 0){
+        if($amount > 0){
 
             $this ->balance += $amount;
 

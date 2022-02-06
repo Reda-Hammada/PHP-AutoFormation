@@ -6,7 +6,7 @@ class bankAccount{
     public $balance;
     //Methods
     public function getBankAccountOwner(){
-         $accountOwner = "reda hammada";
+         $accountOwner = "reda ";
 
          return $accountOwner;
     }
@@ -41,7 +41,6 @@ echo "the account owner name is : " . $account1 ->getBankAccountOwner() . "</br>
 echo  "the account number is : " . $account1 ->accountNumber . "</br>";
 echo  "the account balance is : " . $account1 ->balance;
 
-// private 
 
 
 

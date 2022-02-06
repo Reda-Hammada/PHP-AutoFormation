@@ -6,7 +6,9 @@ in This repository i share what i have learnt in PHP, and what references i have
 -data types(scalar(boolean,integer,float,string), compound(array,object),special(null,resource))    
 -Array(nested array    
 -Conditions( if & else)    
--GET and POST  
+-GET and POST    
+- Class and Object  
+
 
 
 

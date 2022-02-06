@@ -3,7 +3,7 @@ in This repository i share what i have learnt in PHP, and what references i have
 ## What i learnt: 
 -Hello World  
 -Fundamentals(variables, constants, comments, var_dump)  
--data types(intg, float, boolean)  
+-data types(scalar(boolean,integer,float,string), compound(array,object),special(null,resource))    
 -Array(nested array    
 -Conditions( if & else)    
 -GET and POST  

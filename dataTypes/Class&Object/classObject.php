@@ -4,7 +4,7 @@ class bankAccount{
     // properties
     public $accountNumber;
     public $balance;
-    // methods
+    //Methods
     public function getBankAccountOwner(){
          $accountOwner = "reda hammada";
 

@@ -1,11 +1,8 @@
 <?php
-
-$total = 0;
-$number = 1;
-
-while ($number <= 10) {
-	$total += $number;
-	$number++;
+$i = 2;
+while ($i > 0) {
+    echo $i;
 }
 
-echo $total;
+
+

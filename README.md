@@ -4,7 +4,8 @@ in This repository i share what i have learnt in PHP, and what references i have
 -Hello World  
 -Fundamentals(variables, constants, comments, var_dump)    
 -operators   
--data types(scalar(boolean,integer,float,string), compound(array,object),special(null,resource))    
+-data types(scalar(boolean,integer,float,string), compound(array,object),special(null,resource))  
+-type casting     
 -Array(nested array    
 -Function   
 -Conditions( if & else)   

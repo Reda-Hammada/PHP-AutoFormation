@@ -12,7 +12,8 @@ in This repository i share what i have learnt in PHP, and what references i have
 -loop(for, while , do while)       
 -GET and POST    
 -Class and Object    
--File Inclusion  
+-File Inclusion   
+-Files & I/O  
 
 
 

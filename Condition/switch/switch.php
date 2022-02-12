@@ -21,3 +21,5 @@ switch ($role) {
 }
 
 echo $message;
+
+?>

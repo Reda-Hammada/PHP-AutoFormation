@@ -13,7 +13,8 @@ in This repository i share what i have learnt in PHP, and what references i have
 -GET and POST    
 -Class and Object    
 -File Inclusion   
--Files & I/O  
+-Files & I/O     
+-Sessions     
 
 
 

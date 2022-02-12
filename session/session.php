@@ -6,6 +6,5 @@ $_SESSION['username'] = "reda";
 
 echo '<a href="page2.php">another page</a>';
 
-
-
+ 
 ?>

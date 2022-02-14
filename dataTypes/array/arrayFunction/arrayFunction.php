@@ -1,4 +1,6 @@
 <?php
+//array_unshift()
+
 // array_unshift add elements to the beginning of the array 
 $admin = array('reda', 'ali', 'ahmed');
 array_unshift($admin, 'omar');
@@ -23,7 +25,7 @@ $colors +=  array("white" => "#fff");
 
 echo $colors['white'] . "<br>";
 
-
+// array_push()
 
 // array push allows us to add elements to the end of an array 
 $numbers = [1, 2, 3, 4];
@@ -44,4 +46,14 @@ $roles['moderator'] = 4;
 
 print_r($roles);
 
-?>
+// array_pop()
+// The array_pop() function removes an element from the end of an array and returns that element
+
+$items = [1, 2 ,3 ,4];
+$removedItem = array_pop($items);
+echo $removedItem;
+print_r($items);
+
+// array_shift()
+//The array_shift() function removes the first element from an array and returns it
+

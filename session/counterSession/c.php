@@ -11,5 +11,6 @@ else{
     $_SESSION['counter']+=1;
 }
 
+echo ini_get('session.save_path'); // the location of the temporary session files 
 
 ?>

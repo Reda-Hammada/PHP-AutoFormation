@@ -6,7 +6,7 @@ in This repository i share what i have learnt in PHP, and what references i have
 -operators   
 -data types(scalar(boolean,integer,float,string), compound(array,object),special(null,resource))  
 -type casting     
--Array(nested array    
+-Array   
 -Function   
 -Conditions( if & else)   
 -loop(for, while , do while)       

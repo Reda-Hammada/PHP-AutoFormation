@@ -57,3 +57,8 @@ print_r($items);
 // array_shift()
 //The array_shift() function removes the first element from an array and returns it
 
+$num = [1, 2, 3];
+$removedNum = array_shift($num);
+echo $removedNum;
+
+print_r($num);

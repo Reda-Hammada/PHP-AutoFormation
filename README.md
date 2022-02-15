@@ -14,7 +14,9 @@ in This repository i share what i have learnt in PHP, and what references i have
 -Class and Object    
 -File Inclusion   
 -Files & I/O     
--Sessions     
+-Sessions  
+-Errors Handling  
+     
 
 
 

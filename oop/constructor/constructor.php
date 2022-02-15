@@ -7,9 +7,11 @@ class person{
 
    function __construct($name, $age){
 
-   echo $name   . $age ;
+      $this->name = $name;
+      $this->age =$age;
 
-    
+      echo $name . " is " . $age . " years old";
+
    }
 
 }

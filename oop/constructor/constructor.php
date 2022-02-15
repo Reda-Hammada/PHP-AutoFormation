@@ -1,7 +1,7 @@
 <?php
 
 class person{
-
+   
    private $name;
    private $age;
 

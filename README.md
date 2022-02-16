@@ -16,7 +16,8 @@ in This repository i share what i have learnt in PHP, and what references i have
 -Files & I/O     
 -Sessions  
 -Errors Handling     
--Date & Time  
+-Date & Time    
+-Form  
 
 
 

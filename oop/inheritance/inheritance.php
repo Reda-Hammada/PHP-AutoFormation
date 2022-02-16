@@ -53,7 +53,11 @@ class bankAccount {
 }
 
 class createAccount extends bankAccount {
+ //function overriding 
+ public function getBalance(){
 
+  return $this-> balanc = 12000 . " USD";
+ }
 
 }
 
@@ -61,6 +65,7 @@ class createAccount extends bankAccount {
 $account1 = new createAccount();
 $account1 -> balance = 6000 ;
 $account1 -> amount = 1200;
-
-echo $account1-> balance + $account1-> amount . " USD";
+$bankAccount1 = new bankAccount();
+echo $account1-> balance + $account1-> amount . " USD" . PHP_EOL;
+echo $account1-> getBalance();
 ?>

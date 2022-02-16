@@ -56,7 +56,7 @@ class createAccount extends bankAccount {
  //function overriding 
  public function getBalance(){
 
-  return $this-> balanc = 12000 . " USD";
+  return $this-> balance = 12000 . " USD";
  }
 
 }

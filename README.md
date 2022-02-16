@@ -10,8 +10,8 @@ in This repository i share what i have learnt in PHP, and what references i have
 -Function   
 -Conditions( if & else)   
 -loop(for, while , do while)       
--GET and POST    
--Class and Object    
+-GET and POST   
+-Object Oriented Programming in PHP       
 -File Inclusion   
 -Files & I/O     
 -Sessions  

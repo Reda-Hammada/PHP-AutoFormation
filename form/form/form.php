@@ -16,12 +16,12 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
 
 <form method="post" action ="form.php"> 
-    <label>First Name :</label>
-    <input type="text" name="fname">
-    <label>Last Name:</label>
-    <input type="text" name ="lname">
-    <label>Email: </label>
-    <input type="email" name = "email">
+    <label>First Name :</label><br>
+    <input type="text" name="fname"><br>
+    <label>Last Name:</label></br>
+    <input type="text" name ="lname"><br>
+    <label>Email: </label><br>
+    <input type="email" name = "email"><br>
     <input type="submit">
     
 

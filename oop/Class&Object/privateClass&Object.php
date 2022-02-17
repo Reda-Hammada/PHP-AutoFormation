@@ -17,7 +17,7 @@
 
  $Customer1 = new Customer();
 
- $Customer1->$name = 'reda';
+ $Customer1->$name = 'Reda';
 
  echo  $Customer1->$name;
 

@@ -1,3 +1,56 @@
+<?php
+
+require 'config.php';
+
+function checkLogin($username,$password){
+
+    $checkLogin = "SELECT username,pass FROM user WHERE username = '$username' AND pass = '$password' ";
+    $query = mysqli_query(connectDB(), $checkLogin);
+    $result = mysqli_fetch_assoc($query);
+   
+    
+  return $result;
+    
+};
+
+function sessionStart(){
+
+    session_start();
+    $_SESSION['admin'] = 
+}
+
+
+     
+
+if(isset($_POST['login'])){
+    
+
+     $username = $_POST['username'];
+     $password = $_POST['password'];
+     checkLogin($username,$password);
+     $data = checkLogin($username,$password);
+     
+
+     if($username == $data['username'] && $password == $data ['pass']){
+        
+        header('location:admin.php');
+     }
+
+     else {
+
+        echo "error";
+     }
+
+  
+
+    
+}
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +65,10 @@
 
 
 ?>
-    <form method='GET'>
+    <form method='POST'>
         <input type="text" name ='username'>
         <input type="password" name="password">
-        <input type="submit"  value="log in" name="submit">
+        <input type="submit"  value="log in" name="login">
         <a href="register.php">Register</a>
     </form>
 </body>

@@ -12,37 +12,17 @@
     <?php
 
 
-        function  connectDB(){
-
-            $connect = null;
-
-                 if($connect == null){
-
-                    $connect = mysqli_connect('localhost','red','123456','users');
-                 }
-                 
-                 else {
-
-                        $message = "database connection problem";
-
-                        throw new Exception($message);
-                 }
-
-                 
-                 return $connect;
-
-
-        };
+        require 'config.php';
 
         if(isset($_POST['submit'])){
 
+            $username = $_POST['username'];
             $firstname =  $_POST['firstname'];
             $lastname = $_POST['lastname'];
             $email = $_POST['email'];
-            $password =  md5($_POST['pass']);
-            $cpassword = md5($_POST['cpassword']);
+            $password =  $_POST['pass'];
 
-            $insertDB = "INSERT INTO user  (firstName, lastName ,email,pass,cpassword ) VALUES ('$firstname','$lastname','$email','$password','$cpassword')";
+            $insertDB = "INSERT INTO user  (username,firstName, lastName ,email,pass) VALUES ('$username','$firstname','$lastname','$email','$password')";
             mysqli_query(connectDB(), $insertDB);
         }
         
@@ -56,13 +36,12 @@
 <h1>Register</h1>
 
 <form method="POST">
-
-    <input type="text" name = "firstname">
-    <input type="text" name = "lastname">
-    <input type="text"email" name ="email">
-    <input type = "password" name = "pass">
-    <input type = "password" name = "cpassword">
-    <input type ="submit" name ="submit"  value = "register">
+    <input type ="text" name="username" placeholder="username">
+    <input type="text" name = "firstname" placeholder="first name">
+    <input type="text" name = "lastname" placeholder="last name">
+    <input type="text"email" name ="email" placeholder="email">
+    <input type = "password" name = "pass" placeholder="password">
+    <input type ="submit" name ="submit"  value = "register" >
 
 </form>
 

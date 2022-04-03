@@ -13,11 +13,6 @@ function checkLogin($username,$password){
     
 };
 
-function sessionStart(){
-
-    session_start();
-    $_SESSION['admin'] = 
-}
 
 
      
@@ -34,6 +29,9 @@ if(isset($_POST['login'])){
      if($username == $data['username'] && $password == $data ['pass']){
         
         header('location:admin.php');
+
+        session_start();
+        $_SESSION['admin'] = $username;
      }
 
      else {

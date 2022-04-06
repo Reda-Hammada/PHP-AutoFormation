@@ -2,10 +2,25 @@
 
 session_start();
 
-$admin = $_SESSION['admin']
+$admin = $_SESSION['admin'];
+
+if($admin){
+
+  echo  $admin ;
 
 
-?>
+}
+
+else {
+
+    header('location:login.php');
+}
+
+    
+      
+    ?>
+
+
 
 
 <!DOCTYPE html>
@@ -17,6 +32,7 @@ $admin = $_SESSION['admin']
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <h1><?php echo " Welcome " . $admin; ?>
+  
+    <a href="logout.php">logout</a>
 </body>
 </html>

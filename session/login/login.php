@@ -1,5 +1,8 @@
 <?php
 
+session_start();
+
+
 require 'config.php';
 
 function checkLogin($username,$password){
@@ -24,24 +27,22 @@ if(isset($_POST['login'])){
      $password = $_POST['password'];
      checkLogin($username,$password);
      $data = checkLogin($username,$password);
+
      
-
-     if($username == $data['username'] && $password == $data ['pass']){
-        
-        header('location:admin.php');
-
-        session_start();
-        $_SESSION['admin'] = $username;
-     }
-
-     else {
-
-        echo "error";
-     }
-
-  
-
     
+
+        if($username == $data['username'] && $password == $data ['pass']){
+        
+            $_SESSION['admin'] = $username;
+
+            header('location:admin.php');
+    
+         }
+         
+    
+       
+   
+         
 }
 
 
@@ -59,10 +60,6 @@ if(isset($_POST['login'])){
 </head>
 <body>
 
-<?php
-
-
-?>
     <form method='POST'>
         <input type="text" name ='username'>
         <input type="password" name="password">

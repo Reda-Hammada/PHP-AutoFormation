@@ -7,7 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include("menu.php"); ?>
-    <p>it worked</p>
+    
+    <?php
+
+
+    ?>
 </body>
 </html>

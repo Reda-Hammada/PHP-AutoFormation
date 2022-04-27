@@ -3,7 +3,7 @@
 $host = 'localhost';
 $user = 'Reda';
 $password = '123456';
-$dbName = 'liveCodingCart';
+$dbName = 'livecoding';
 
 // set DSN
 
@@ -15,7 +15,7 @@ $pdo = new PDO($dsn, $user, $password);
 
 //PDO query
 
-$stmt = $pdo->query('SELECT * FROM liveCodingProducts ');
+$stmt = $pdo->query('SELECT * FROM products ');
 
 $row = null; 
 
@@ -31,25 +31,44 @@ endif;
 
 // positional statement 
 
-$sql = 'SELECT * FROM  liveCodingProducts WHERE productName = ? ';
+$sql = 'SELECT * FROM  products WHERE productName = ? ';
 $stmt = $pdo->prepare($sql);
-$product = 'product 4';
+$product = 'product3';
 $stmt->execute([$product]);
 $product =  $stmt->fetch(PDO::FETCH_OBJ);
 echo var_dump($product) . "<br>";
 
 //named statment 
 
-$sql  = 'SELECT * FROM liveCodingProducts WHERE productName = :product4';
+$sql  = 'SELECT * FROM products WHERE productName = :product';
 $stmt = $pdo->prepare($sql);
-$product = 'product 4';
-$stmt->execute(['product4' => $product]);
+$product = 'product3';
+$stmt->execute(['product' => $product]);
 $fetch = $stmt->fetch(PDO::FETCH_ASSOC);
-echo $fetch['price'];
+echo $fetch['price'] . "<br>";
 
 // GET ROW COUNT 
 
-$sql = 'SELECT * FROM'
+$sql = 'SELECT * FROM products';
+$stmt = $pdo->query($sql);
+$count = $stmt->rowCount();
+
+echo $count;
+
+// INSERT DATA
+
+$productName = 'product4';
+$description = 'product 4 details';
+$price = '600';
+
+$sql = "INSERT INTO products(productName,description,price)
+        VALUES(:productName,:description,:price)";
+
+$stmt = $pdo->prepare($sql);
+$stmt->execute(['productName' => $productName, 'description'=>$description, 'price'=>$price]);
+
+
+
 
 
 

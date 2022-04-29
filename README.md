@@ -17,7 +17,10 @@ in This repository i share what i have learnt in PHP, and what references i have
 -Sessions  
 -Errors Handling     
 -Date & Time    
--Form  
+-Form     
+-PDO  
+-REST API  
+
 
 
 
@@ -29,3 +32,5 @@ in This repository i share what i have learnt in PHP, and what references i have
 ### References :  
 [PHP tutorial](https://www.phptutorial.net/)  
 [Tutorials Point](https://www.tutorialspoint.com/index.htm)  
+[Traversy Media](https://www.youtube.com/c/TraversyMedia/featured)  
+[Udemy Traversy Media course](https://www.udemy.com/course/object-oriented-php-mvc/)  

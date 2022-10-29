@@ -27,47 +27,47 @@
 
 
 
-$student = new Student();
+	$student = new Student();
 
 
-// composing traits 
+	// composing traits 
 
-trait Reader
-{
-	public function read($source)
+	trait Reader
 	{
-		echo sprintf('Read from %s <br>', $source);
+		public function read($source)
+		{
+			echo sprintf('Read from %s <br>', $source);
+		}
 	}
-}
 
-trait Writer
-{
-	public function write($destination)
+	trait Writer
 	{
-		echo sprintf('Write to %s <br>', $destination);
+		public function write($destination)
+		{
+			echo sprintf('Write to %s <br>', $destination);
+		}
 	}
-}
 
-trait Copier
-{
-	use Reader, Writer;
-
-	public function copy($source, $destination)
+	trait Copier
 	{
-		$this->read($source);
-		$this->write($destination);
+		use Reader, Writer;
+
+		public function copy($source, $destination)
+		{
+			$this->read($source);
+			$this->write($destination);
+		}
 	}
-}
 
-class FileUtil
-{
-	use Copier;
-
-	public function copyFile($source, $destination)
+	class FileUtil
 	{
-		$this->copy($source, $destination);
+		use Copier;
+
+		public function copyFile($source, $destination)
+		{
+			$this->copy($source, $destination);
+		}
 	}
-}
 
 
 

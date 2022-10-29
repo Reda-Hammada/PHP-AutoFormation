@@ -4,7 +4,6 @@
   interface MyInterface 
   {
 
-    const user = 1;
 
     public function methodName($name);
 
@@ -17,15 +16,20 @@
   class MyClass implements MyInterface
   {
 
-    public $user_name = 'reda';
+    private $name = 'reda';
 
-    public function methodName($user_name){
+    public function __construct(){
 
-        echo $this->user_name;
+        $this->methodName($this->name);
+    }
+
+    public function methodName($name){
+
+        echo $this->name;
 
     }
   }
 
   $class = new MyClass();
-  $class->methodName($user_name);
+
 ?>

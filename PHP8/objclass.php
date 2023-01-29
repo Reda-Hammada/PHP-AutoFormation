@@ -8,6 +8,7 @@ class german {
 
  $language = new german();
  $language::class;
+ 
  /* as an alternative for get_class() 
     we can use $object::class to get the class name*/
 

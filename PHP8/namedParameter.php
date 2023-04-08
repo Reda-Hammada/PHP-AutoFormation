@@ -19,9 +19,10 @@ class Invoice
 
  $invoice = new Invoice(
     description: 'constumer installation',
-    total:1000,
     date:new DateTime(),
     paid:true,
+    total:1000,
+
  );
 
  var_dump($invoice);
